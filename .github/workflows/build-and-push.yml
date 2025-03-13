@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main  # Runs when code is pushed to the main branch
-  pull_request:
-    branches:
-      - main  # Runs on PRs to main (optional)
 
 jobs:
   build-and-push:
