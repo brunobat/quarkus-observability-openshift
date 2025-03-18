@@ -45,7 +45,7 @@ jobs:
       # 🔹 Build Docker image
       - name: Build Docker Image
         run: |
-          docker build -f src/main/docker/Dockerfile.jvm -t ghcr.io/brunobat/quarkus-observability-openshift:latest .
+          docker build -f src/main/docker/Dockerfile.jvm -t ghcr.io/brunobat/quarkus-observability-openshift/app:latest .
 
       # 🔹 Push Docker image
       - name: Push Docker Image
