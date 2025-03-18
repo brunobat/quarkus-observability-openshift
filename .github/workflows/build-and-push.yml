@@ -50,4 +50,4 @@ jobs:
       # 🔹 Push Docker image
       - name: Push Docker Image
         run: |
-          docker push ghcr.io/brunobat/quarkus-observability-openshift:latest
+          docker push ghcr.io/brunobat/quarkus-observability-openshift/app:latest
