@@ -27,8 +27,7 @@ kubectl apply -f tracing
 5. Install OpenTelemetry collector
 
 ```bash
-kubectl apply -f 00-create-namespace.yaml
-kubectl apply -f 01-deploy-otel-collector.yaml
+kubectl apply -f 00-deploy-otel-collector.yaml
 ```
 
 ## Forward data to OpenTelemetry collector

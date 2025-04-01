@@ -1,4 +1,7 @@
-# based on config/samples/otelcol_v1alpha1_openshift.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: otel-observability
 ---
 apiVersion: opentelemetry.io/v1beta1
 kind: OpenTelemetryCollector
