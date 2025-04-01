@@ -46,6 +46,21 @@ spec:
       targetPort: 8080
   type: ClusterIP
 ---
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: quarkus-app
+  namespace: quarkus
+spec:
+  path: /veggies
+  to:
+    kind: Service
+    name: quarkus-app
+    weight: 100
+  port:
+    targetPort: 8080
+  wildcardPolicy: None
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
