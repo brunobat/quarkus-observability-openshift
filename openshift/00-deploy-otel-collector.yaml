@@ -54,7 +54,8 @@ spec:
               - set(attributes["message"], body)
 
     exporters:
-      debug: {}
+      debug:
+        verbosity: detailed
 
       otlphttp/tempo:
         endpoint: https://tempo-simplest-gateway.tempo-observability.svc.cluster.local:8080/api/traces/v1/dev
@@ -88,7 +89,7 @@ spec:
         # Remove this section if Tempo is not deployed
         traces:
           receivers: [otlp, jaeger, zipkin]
-          exporters: [otlphttp/tempo]
+          exporters: [debug, otlphttp/tempo]
         # Remove this section of Loki is not deployed
         logs:
           receivers: [otlp]
@@ -96,7 +97,7 @@ spec:
           exporters: [debug, otlphttp/loki]
         metrics:
           receivers: [otlp]
-          exporters: [prometheus]
+          exporters: [debug, prometheus]
 ---
 ### RBAC for sending logs to Tempo
 apiVersion: rbac.authorization.k8s.io/v1
