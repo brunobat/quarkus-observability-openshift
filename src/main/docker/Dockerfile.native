@@ -7,11 +7,11 @@
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.native -t quarkus/quarkus-observability-demo-rabbitmq .
+# docker build -f src/main/docker/Dockerfile.native -t quarkus/quarkus-observability-openshift .
 #
 # Then run the container using:
 #
-# docker run -i --rm -p 8080:8080 quarkus/quarkus-observability-demo-rabbitmq
+# docker run -i --rm -p 8080:8080 quarkus/quarkus-observability-openshift
 #
 ###
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.5
