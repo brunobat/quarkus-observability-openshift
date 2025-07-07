@@ -1,6 +1,6 @@
 # quarkus-observability-openshift
 
-This project creates an application based on the Quarkus framework and is a companion app for this blog post: https://developers.redhat.com/articles/2025/04/22/quarkus-opentelemetry-openshift 
+This project creates an application based on the Quarkus framework and is a companion app for this blog post: https://developers.redhat.com/articles/2025/07/07/how-quarkus-works-opentelemetry-openshift 
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/.
 
